@@ -31,6 +31,18 @@
             height: 100%;
             border: none;
         }
+
+        #background-video {
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+        }
     </style>
 </head>
 
@@ -159,13 +171,18 @@
     </nav>
 
     <section class="home-slider owl-carousel">
-        <div class="slider-item" style="background-image:url(images/bg_1.jpg)">
+        <!-- background-image:url(images/bg_1.jpg) -->
+        <div class="slider-item" style="">
             <div style="overflow: scroll; scrollbar-width: none; " class="overlay"></div>
             <div class="container">
                 <div style="overflow: scroll; scrollbar-width: none; "
                     class="row no-gutters slider-text align-items-center justify-content-end"
                     data-scrollax-parent="true">
+                    <video id="background-video" autoplay loop muted >
+                        <source src="videos/increase_stock.mov" type="video/mp4">
+                        </video>
                     <div class="col-md-7 ftco-animate mb-md-5">
+                        
                         <span class="subheading">U & ME TV</span>
                         <h1 class="mb-4">We provide financial consulting online.</h1>
                         <p><a href="#" class="btn btn-primary px-4 py-3 mt-3">Our Services</a></p>
@@ -173,7 +190,7 @@
                 </div>
             </div>
         </div>
-        <div class="slider-item" style="background-image:url(images/xbg_2.jpg.pagespeed.ic.jCcrtEyQkZ.jpg)">
+        <!-- <div class="slider-item" style="background-image:url(images/xbg_2.jpg.pagespeed.ic.jCcrtEyQkZ.jpg)">
             <div style="overflow: scroll; scrollbar-width: none; " class="overlay"></div>
             <div class="container">
                 <div style="overflow: scroll; scrollbar-width: none; "
@@ -186,7 +203,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </section>
     <section class="ftco-section ftco-no-pt ftco-no-pb ftco-consult">
         <div class="container">
@@ -362,7 +379,7 @@
     </section>
 
     <section class="ftco-section ftco-no-pt">
-        <div class="">
+        <div class="container-fluid ml-5 px-5">
             <div class="row justify-content-center mb-5">
                 <div class="col-md-8 text-center heading-section ftco-animate">
                     <span class="subheading">Recent Videos</span>
